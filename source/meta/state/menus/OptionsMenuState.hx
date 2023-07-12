@@ -38,6 +38,7 @@ import Init.SettingTypes;
 /**
  * Preferences
  * 
+ *BotPlay
  * Downscroll
  * Centered Notefield
  * Framerate Cap
