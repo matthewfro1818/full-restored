@@ -870,17 +870,6 @@ class PlayState extends MusicBeatState
 		botplayText.borderSize = 1.25;
 		add(botplayText);
 		botplayText.cameras = [dialogueHUD];
-		var quoteList:Array<String> = botplayQuotes.get(CoolUtil.spaceToDash(SONG.song.toLowerCase()));
-		if (quoteList != null && quoteList.length > 0)
-		{
-			botplaySubtext = new FlxText(0, 0, 0, quoteList[FlxG.random.int(0, quoteList.length - 1)]);
-			botplaySubtext.setFormat(Paths.font("vcr.ttf"), 24, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-			botplaySubtext.y = botplayText.y + 24;
-			botplaySubtext.screenCenter(X);
-			botplaySubtext.scrollFactor.set();
-			add(botplaySubtext);
-			botplaySubtext.cameras = [dialogueHUD];
-		}
 
 		// set the camera position to the center of the stage
 		var positionArray = getPositionArrayCenter();
