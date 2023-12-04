@@ -1,10 +1,6 @@
 package vlc;
 
-#if (hxCodec >= "2.6.1")
-import hxcodec.VideoHandler;
-#elseif (hxCodec == "2.6.0")
-import VideoHandler;
-#end
+import vlc.MP4Handler;
 
 import openfl.events.Event;
 import flixel.FlxG;
@@ -13,7 +9,7 @@ import flixel.FlxG;
  * Play a video using cpp.
  * Use bitmap to connect to a graphic or use `MP4Sprite`.
  */
-class MP4Handler extends VideoHandler
+class MP4Handler extends MP4Handler
 {
 	public var isDisposed:Bool = false;
 	public var readyCallback:Void->Void;
