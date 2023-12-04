@@ -628,8 +628,8 @@ class FlxSound extends FlxBasic
 			#if cpp
 			@:privateAccess
 			{
-				if (_channel.__source != null){
-					var handle = this._channel.__source.__backend.handle;
+				if (_channel != null){
+					var handle = this._channel;
 					if(filter!=null)
 						AL.sourcei(handle, AL.DIRECT_FILTER, filter);
 					else
