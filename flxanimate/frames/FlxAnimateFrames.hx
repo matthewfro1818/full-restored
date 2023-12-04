@@ -155,7 +155,7 @@ class FlxAnimateFrames extends FlxAtlasFrames
      * @param Image (Optional) the image of the Xml.
      * @return A new instance of `FlxAtlasFrames`
      */
-    public static function fromSparrow(Path:FlxSparrow, ?Image:FlxGraphicAsset):FlxAtlasFrames
+    public static function fromSparrow(Path:FlxSparrow, ?Image:FlxGraphicAsset):
 	{
         if (Path is String && !Assets.exists(Path))
 			return null;
