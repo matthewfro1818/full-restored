@@ -168,7 +168,7 @@ class ShopState extends MusicBeatState
 	var confirmingPurchase:Bool = false;
 	var inCutscene:Bool = false;
 
-	static var page:SubMenu = SHOP;
+	static var page:SubMenu = meta.state.menus.SubMenu;
 
 	var gameBoy:FlxAnimate;
 	var blackOverlay:FlxSprite;
