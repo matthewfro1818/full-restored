@@ -26,7 +26,7 @@ class PauseSubState extends MusicBeatSubState
 {
 	var grpText:Array<FlxText> = [];
 
-	var menuItems:Array<String> = ['RESUME', 'RESTART', 'BOTPLAY', 'EXIT'];
+	var menuItems:Array<String> = ['RESUME', 'RESTART', 'EXIT'];
 	var curSelected:Int = 0;
 
 	var pauseMusic:FlxSound;
@@ -205,10 +205,6 @@ class PauseSubState extends MusicBeatSubState
 						case 'resume':
 							lerpVal = ogLerpVal;
 							closing = true;
-						case 'botplay':
-							PlayState.instance.botplayTxt.visible;
-							PlayState.instance.botplayTxt.alpha = 1;
-							PlayState.instance.botplaySine = 0;
 						case 'options':
 							openSubState(new OptionsMenuState());
 						case 'restart':
