@@ -182,7 +182,7 @@ class OptionsMenuState extends MusicBeatSubState
 			],
 			"Preferences" => [
 				["Game Settings"],
-				["BotPlay"", confirmOption, generateExtra, updateOption],
+				["BotPlay", confirmOption, generateExtra, updateOption],
 				["Downscroll", confirmOption, generateExtra, updateOption],
 				["Centered Notefield", confirmOption, generateExtra, updateOption],
 				["Counter", confirmOption, generateExtra, updateOption],
