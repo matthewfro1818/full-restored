@@ -34,7 +34,7 @@ jobs:
           haxelib install openfl
           haxelib install flixel 4.11.0
           haxelib install flixel-ui
-          haxelib git flixel-addons https://github.com/HaxeFlixel/flixel-addons
+          haxelib install flixel-addons 2.10.0
           haxelib install hscript
           haxelib install newgrounds
           haxelib run lime setup
