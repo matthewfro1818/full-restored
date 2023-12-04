@@ -13,7 +13,7 @@ class MP4Handler
 {
 	public var isDisposed:Bool = false;
 	public var readyCallback:Void->Void;
-	override function onVLCOpening(){
+	function onVLCOpening(){
 		super.onVLCOpening();
 		if (readyCallback != null)
 			readyCallback();
