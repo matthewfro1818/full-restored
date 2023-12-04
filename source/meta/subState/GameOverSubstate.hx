@@ -22,12 +22,11 @@ import meta.state.*;
 import meta.state.menus.*;
 import openfl.media.Sound;
 import openfl.utils.Assets;
+import vlc.MP4Handler;
 
 #if sys
 import sys.FileSystem;
 #end
-
-import vlc.MP4Handler;
 
 class GameOverSubstate extends MusicBeatSubState
 {
