@@ -949,7 +949,7 @@ class ShopState extends MusicBeatState
 			}
 		}*/
 		if(canControl){
-			var current:Int = page;
+			var current:SubMenu = page;
 
 			if(left){
 				page--;
